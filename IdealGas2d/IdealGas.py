@@ -32,13 +32,14 @@ y = np.array(y)
 
 # Initialize figure
 fig, ax = plt.subplots()
-ax.set_xlim(0.4857, 1.4857)
-ax.set_ylim(0.4857, 1.4857)
+ax.set_xlim(-0.05, 1.0+0.05)
+ax.set_ylim(-0.05, 1.0+0.05)
 ax.set_xlabel("X Position")
 ax.set_ylabel("Y Position")
 
+
 # Scatter plot (initial positions)
-scat = ax.scatter(x[:, 0], y[:, 0], color='k', s=20)  # Multiple particles
+scat = ax.scatter(x[:, 0], y[:, 0], color='indigo', s=50)  # Multiple particles
 
 # Update function for animation
 def update(frame):
@@ -46,7 +47,7 @@ def update(frame):
     return scat,
 
 # Create animation
-ani = animation.FuncAnimation(fig, update, frames=len(x[0]), interval=20, blit=True, repeat=False)
+ani = animation.FuncAnimation(fig, update, frames=len(x[0]), interval=25, blit=True, repeat=False)
 
 # Show animation
 plt.show()
@@ -61,7 +62,7 @@ vf = np.sqrt(vxf **2 + vyf **2)
 
 ##plot the distribution
 plt.figure()
-plt.hist(vf, bins=15, color='blue', edgecolor='black')
+plt.hist(vf, bins=25, color='blue', edgecolor='black')
 plt.xlabel("Velocity")
 plt.ylabel("Count")
 plt.title("Final Velocity Distribution")

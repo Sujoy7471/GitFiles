@@ -1,0 +1,1 @@
+In this repo, we have solved schrodinger equation for various potentials using the numerov method.
