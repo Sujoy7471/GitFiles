@@ -1,4 +1,4 @@
-#### Hi everyone. I’m very excited to share that during my semester break, I tried to build a stellar spectrometer using my old telescope at my home. 
+#### Hi everyone. I’m very excited to share that during my 1st semester break at TIFR, I tried to build a stellar spectrometer using my old telescope at my home. 
 I made a custom eyepiece using a diffraction grating obtained from a laser pointer, and then used my smartphone to take a photo of "Sirius A" through the telescope. 
 I then cropped and analyzed the photo using ImageJ software and did all the processing in Python.
 I know there are many limitations in this process, such as:
