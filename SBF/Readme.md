@@ -27,16 +27,21 @@ Here I am goanna explain the method using multiple points.
             $P_{total} = P_{psf}*P_{SBF} + P_{noise}$ 
     10. The SBF aperant magnetude is, $m_{sbf} = -2.5log_{10}(P_{sbf})$
 
-* **Color measurement:** I applied the mask used in the background source subtraction for the residual signal on the galaxy signal and then did azimuthally avaraging of the intensity by using the same elliptical masks. In this way I got the radial intensity profile of the galaxy. I did this process for F814W band and F475W band [used F435W where F475W was not available and then converted the color to required band. The formula used is, $(F435W - F814W)_{\mathrm{VEGA}} = (F435W - F814W)_{\mathrm{STMAG}} + (\Delta_{435} - \Delta_{814})$].
+Data for M85 galaxy, 
+
+<img src= "Images/M85-sbf.png" alt="sbf data" width="1200" height="400">
+<img src="Images/M85-res.png" alt="sbf data" width="700" height="700">
+
+* **Color measurement:** I applied the mask used in the background source subtraction for the residual signal on the galaxy signal and then did azimuthally avaraging of the intensity by using the same elliptical masks. In this way I got the radial intensity profile of the galaxy. I did this process for F814W band and F475W band [used F435W where F475W was not available and then converted the color to required band. The formula used is, (F435W−F814W)_VEGA ​= (F435W − F814W)_STMAG​ + (Δ435​ − Δ814​)].
 
      Then I measured the radial color profile using these plots and calculated average color and std.
 
 * **Color- Magnetude calibration:** I used the data for some galaxies with known distances and calibrated the relation. The plot has been shown below.
-<img src="Images/C-sbf.png" alt="sbf" width="500" height="300">
+<img src="Images/C-sbf.png" alt="sbf" width="700" height="500">
 
 
 * **Distance measurement:** I didn't get enough data. So I did the measurement for only 1 galaxy, The M85. The distance value I got is `17.67 ± 0.87 Mpc` whereas the literature value is `18.5 ± 1.3 Mpc`. So my value is within 5% of the literature value.
 
 
 ### Discussion and conclution: 
-In this method, I have neglected few things, like I have not removed the undetected globular clusters and the undetected backgroud sources. Also during color measurement I didn't convolve the better resolution image with bad PSF, which made the color more red than it actually is. But these are quite systematic and thus I got the trend. Also I did the measurement for only 1 galaxy which is not ideal. Thus I can't say that this is working well but I can safely conclude that my analysis shows the correlation betwen the color and SBF magnetude of the ellipticals. And I am quite happy with the results as I did this for the first time 😊
+In this method, I have neglected few things, like I have not removed the undetected globular clusters and the undetected backgroud sources. Also during color measurement I didn't convolve the better resolution image with bad PSF, which made the color more red than it actually is. Also the color conversion from F435W to F475W is not accurate. I just approcimated it. But these are quite systematic and thus I got the trend. Also I did the measurement for only 1 galaxy which is not ideal. Thus I can't say that this is working well but I can safely conclude that my analysis shows the correlation betwen the color and SBF magnetude of the ellipticals. And I am quite happy with the results as I did this for the first time 😊
