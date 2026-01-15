@@ -19,10 +19,10 @@ I know there are many limitations in this process, such as:
 #### Some of the dips matched with the spectrum, while others did not. However, my spectrum looks quite similar to the actual one, so I’m pretty happy with the first attempt🤗. I’ll try to improve on these limitations in the future.
 
 #### Here are all the data files👇
-* [Direct view through the eyepiece](/SiriusTelescopeView.jpg)
-* [Cropped spectrum that is used for the analysis](/Sirius%20A%20Spectrum%20image.jpg)
-* [Pixel Intensity distribution using ImageJ software](/SiriusRawSpectraData.csv)
-* [The Jupyter file that contains all the python codes for analysis](/SiriusA_SpectrumAnalysis.ipynb)
-* [The raw spectrum before calibration](/RawSpectrumOfSiriusA.png)
-* [The calibrated spectrum](/CalibratedSpectrumOfSiriusA.png)
-* [The final Spectrum of Sirius A](/SiriusASpectrum_Obtained.png)
+* [Direct view through the eyepiece](SiriusTelescopeView.jpg)
+* [Cropped spectrum that is used for the analysis](Sirius%20A%20Spectrum%20image.jpg)
+* [Pixel Intensity distribution using ImageJ software](SiriusRawSpectraData.csv)
+* [The Jupyter file that contains all the python codes for analysis](SiriusA_SpectrumAnalysis.ipynb)
+* [The raw spectrum before calibration](RawSpectrumOfSiriusA.png)
+* [The calibrated spectrum](CalibratedSpectrumOfSiriusA.png)
+* [The final Spectrum of Sirius A](SiriusASpectrum_Obtained.png)
