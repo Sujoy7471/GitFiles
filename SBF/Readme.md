@@ -32,7 +32,7 @@ Data for M85 galaxy,
 <img src= "Images/M85-sbf.png" alt="sbf data" width="1200" height="400">
 <img src="Images/M85-res.png" alt="sbf data" width="700" height="700">
 
-* **Color measurement:** I applied the mask used in the background source subtraction for the residual signal on the galaxy signal and then did azimuthally avaraging of the intensity by using the same elliptical masks. In this way I got the radial intensity profile of the galaxy. I did this process for F814W band and F475W band [used F435W where F475W was not available and then converted the color to required band. The formula used is, $(F435W - F814W)_{\mathrm{VEGA}} = (F435W - F814W)_{\mathrm{STMAG}} + (\Delta_{435} - \Delta_{814})$].
+* **Color measurement:** I applied the mask used in the background source subtraction for the residual signal on the galaxy signal and then did azimuthally avaraging of the intensity by using the same elliptical masks. In this way I got the radial intensity profile of the galaxy. I did this process for F814W band and F475W band [used F435W where F475W was not available and then converted the color to required band. The formula used is, $(F435W - F814W)_{\mathrm{VEGA}} = (F435W - F814W)_{\mathrm{STMAG}} + (\Delta_{435} - \Delta_{814}) = 0.20 + 0.78(F435W - F814W)_{\mathrm{STMAG}} $.
 
      Then I measured the radial color profile using these plots and calculated average color and std.
 
