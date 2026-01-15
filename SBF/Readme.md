@@ -32,7 +32,7 @@ Data for M85 galaxy,
 <img src= "Images/M85-sbf.png" alt="sbf data" width="1200" height="400">
 <img src="Images/M85-res.png" alt="sbf data" width="700" height="700">
 
-* **Color measurement:** I applied the mask used in the background source subtraction for the residual signal on the galaxy signal and then did azimuthally avaraging of the intensity by using the same elliptical masks. In this way I got the radial intensity profile of the galaxy. I did this process for F814W band and F475W band [used F435W where F475W was not available and then converted the color to required band. The formula used is, (F435W−F814W)_VEGA ​= (F435W − F814W)_STMAG​ + (Δ435​ − Δ814​)].
+* **Color measurement:** I applied the mask used in the background source subtraction for the residual signal on the galaxy signal and then did azimuthally avaraging of the intensity by using the same elliptical masks. In this way I got the radial intensity profile of the galaxy. I did this process for F814W band and F475W band [used F435W where F475W was not available and then converted the color to required band. The formula used is, $(F435W - F814W)_{\mathrm{VEGA}} = (F435W - F814W)_{\mathrm{STMAG}} + (\Delta_{435} - \Delta_{814})$].
 
      Then I measured the radial color profile using these plots and calculated average color and std.
 
@@ -40,8 +40,12 @@ Data for M85 galaxy,
 <img src="Images/C-sbf.png" alt="sbf" width="700" height="500">
 
 
-* **Distance measurement:** I didn't get enough data. So I did the measurement for only 1 galaxy, The M85. The distance value I got is `17.67 ± 0.87 Mpc` whereas the literature value is `18.5 ± 1.3 Mpc`. So my value is within 5% of the literature value.
+* **Distance measurement:** I didn't get enough data. So I did the measurement for only 2 galaxies, The M85 and the NGC 3268. 
+
+The distance value I got for M85 is `17.67 ± 0.87 Mpc` whereas the literature value is `18.5 ± 1.3 Mpc`. So my value is within 5% of the literature value.
+
+The distance value I got for NGC 3268 is `46.78 ± 3.33 Mpc` whereas the literature value is `40 ± 4 Mpc`. So my value is within 20% of the literature value. But one thing to mention here is for this one, I didn't get the F475W band data. Instead I used the F435W band and converter the color using the approximate formula. This suggests that the approximate formula is also not very far off.
 
 
 ### Discussion and conclution: 
-In this method, I have neglected few things, like I have not removed the undetected globular clusters and the undetected backgroud sources. Also during color measurement I didn't convolve the better resolution image with bad PSF, which made the color more red than it actually is. Also the color conversion from F435W to F475W is not accurate. I just approcimated it. But these are quite systematic and thus I got the trend. Also I did the measurement for only 1 galaxy which is not ideal. Thus I can't say that this is working well but I can safely conclude that my analysis shows the correlation betwen the color and SBF magnetude of the ellipticals. And I am quite happy with the results as I did this for the first time 😊
+In this method, I have neglected few things, like I have not removed the undetected globular clusters and the undetected backgroud sources. Also during color measurement I didn't convolve the better resolution image with bad PSF, which made the color more red than it actually is. Also the color conversion from F435W to F475W is not accurate. I just approcimated it. But these are quite systematic and thus I got the trend. Also I did the measurement for only 2 galaxies which is not ideal. Thus I can't say that this is working well but I can safely conclude that my analysis shows the correlation betwen the color and SBF magnetude of the ellipticals. And I am quite happy with the results as I did this for the first time 😊
